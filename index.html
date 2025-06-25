@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPro - Your Complete Fitness Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">FitPro</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#meal-plans">Meal Plans</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Success Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Body, Transform Your Life</h1>
+                <p>Join thousands of members achieving their fitness goals with our proven programs</p>
+                <div class="hero-buttons">
+                    <a href="#workouts" class="cta-button">Explore Workouts</a>
+                    <a href="#meal-plans" class="cta-button secondary">View Meal Plans</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workouts Section -->
+        <section id="workouts" class="section">
+            <h2 class="section-title">Workout Plans</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+            </div>
+            <div class="workout-container">
+                <!-- Workout cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Healthy Recipes Section -->
+        <section id="recipes" class="section">
+            <h2 class="section-title">Healthy Recipes</h2>
+            <div class="recipe-container">
+                <!-- Recipe cards will be populated by JavaScript -->
+            </div>
+            <!-- Recipe Modal -->
+            <div id="recipeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meal Plans Section -->
+        <section id="meal-plans" class="section">
+            <h2 class="section-title">Weekly Meal Plans</h2>
+            <div class="meal-plan-container">
+                <div class="meal-plan-nav">
+                    <button class="meal-plan-btn active" data-plan="standard">Standard</button>
+                    <button class="meal-plan-btn" data-plan="vegetarian">Vegetarian</button>
+                    <button class="meal-plan-btn" data-plan="keto">Keto</button>
+                </div>
+                <div class="meal-plan-content">
+                    <!-- Meal plan tables will be populated by JavaScript -->
+                </div>
+                <a href="#" class="download-btn">Download as PDF</a>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <h2 class="section-title">Fitness Tips & Blog</h2>
+            <div class="blog-container">
+                <!-- Blog posts will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <!-- Testimonials will be populated by JavaScript -->
+                </div>
+                <button class="slider-btn prev" aria-label="Previous testimonial">&#10094;</button>
+                <button class="slider-btn next" aria-label="Next testimonial">&#10095;</button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@fitpro.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Health City</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#home">FitPro</a>
+                <p>Your complete fitness solution</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#meal-plans">Meal Plans</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for fitness tips and offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FitPro. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
