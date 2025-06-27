@@ -56,6 +56,10 @@ task 1.2/
 - Fully responsive layout for desktop, tablet, and mobile.
 - Keyboard-accessible navigation and modals.
 - Sufficient color contrast for readability.
+## Demo 🚀
+
+Experience the FITNESS WEBSITE live:  
+👉 [https://shahmams.github.io/SCT_WD_1/](https://shahmams.github.io/SCT_WD_1/)
 
 ## Credits
 
